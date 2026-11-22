@@ -1,0 +1,115 @@
+{
+  "data": {
+    "rows": 1000,
+    "default_rate": 0.3,
+    "train": 700,
+    "test": 300
+  },
+  "features": {
+    "candidates": 18,
+    "selected": [
+      "status_of_existing_checking_account",
+      "credit_history",
+      "savings_account_and_bonds",
+      "duration_in_month",
+      "present_employment_since",
+      "purpose",
+      "other_installment_plans",
+      "housing",
+      "installment_rate_in_percentage_of_disposable_income"
+    ],
+    "dropped": {
+      "job": "IV 0.016 < 0.02",
+      "other_debtors_or_guarantors": "IV 0.010 < 0.02",
+      "number_of_existing_credits_at_this_bank": "IV 0.003 < 0.02",
+      "telephone": "IV 0.003 < 0.02",
+      "present_residence_since": "IV 0.002 < 0.02",
+      "number_of_people_being_liable_to_provide_maintenance_for": "IV 0.000 < 0.02",
+      "credit_amount": "p-value 0.431 > 0.05",
+      "property": "p-value 0.145 > 0.05",
+      "age_in_years": "p-value 0.146 > 0.05"
+    },
+    "iv": {
+      "status_of_existing_checking_account": 0.63,
+      "credit_history": 0.2513,
+      "savings_account_and_bonds": 0.2213,
+      "duration_in_month": 0.2003,
+      "property": 0.1386,
+      "present_employment_since": 0.1385,
+      "purpose": 0.1295,
+      "other_installment_plans": 0.1176,
+      "housing": 0.1027,
+      "age_in_years": 0.0595,
+      "credit_amount": 0.0468,
+      "installment_rate_in_percentage_of_disposable_income": 0.0326,
+      "job": 0.0157,
+      "other_debtors_or_guarantors": 0.0097,
+      "number_of_existing_credits_at_this_bank": 0.003,
+      "telephone": 0.0029,
+      "present_residence_since": 0.002,
+      "number_of_people_being_liable_to_provide_maintenance_for": 0.0002
+    }
+  },
+  "coefficients": {
+    "const": -0.8635,
+    "status_of_existing_checking_account": 0.7823,
+    "credit_history": 0.6546,
+    "savings_account_and_bonds": 0.9054,
+    "duration_in_month": 1.0752,
+    "present_employment_since": 0.8289,
+    "purpose": 0.9634,
+    "other_installment_plans": 0.7776,
+    "housing": 0.7431,
+    "installment_rate_in_percentage_of_disposable_income": 1.4931
+  },
+  "p_values": {
+    "const": 0.0,
+    "status_of_existing_checking_account": 0.0,
+    "credit_history": 0.001,
+    "savings_account_and_bonds": 0.0001,
+    "duration_in_month": 0.0,
+    "present_employment_since": 0.0012,
+    "purpose": 0.0004,
+    "other_installment_plans": 0.0052,
+    "housing": 0.013,
+    "installment_rate_in_percentage_of_disposable_income": 0.0061
+  },
+  "cv": {
+    "gini_mean": 0.4988824101068999,
+    "gini_std": 0.03898053553719775,
+    "n_features": [
+      9,
+      9,
+      8,
+      9,
+      8
+    ]
+  },
+  "test": {
+    "auc": 0.7737037037037036,
+    "gini": 0.5474074074074071,
+    "gini_95ci": [
+      0.42681964056482663,
+      0.6534787714880919
+    ],
+    "ks": 0.45714285714285724,
+    "brier": 0.16784323631850445,
+    "hosmer_lemeshow": {
+      "stat": 6.3549130020183915,
+      "p_value": 0.6075416796426005
+    },
+    "psi_train_vs_test": 0.013234283335565995
+  },
+  "calibration": {
+    "central_tendency": 0.05,
+    "intercept_shift": -2.55009223563146,
+    "grades_monotonic": true,
+    "grades_failing_binomial_5pct": []
+  },
+  "benchmark_gbm": {
+    "cv_gini_mean": 0.5374149659863946,
+    "cv_gini_std": 0.03423915223273482,
+    "test_gini": 0.595767195767196,
+    "test_auc": 0.797883597883598
+  }
+}

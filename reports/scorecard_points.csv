@@ -1,0 +1,40 @@
+feature,bin,count,bad_rate,woe,points
+status_of_existing_checking_account,no checking account,276,0.116,-1.176,83
+status_of_existing_checking_account,... >= 200 DM / salary assignments for at least 1 year,44,0.273,-0.114,59
+status_of_existing_checking_account,0 <= ... < 200 DM,188,0.394,0.412,48
+status_of_existing_checking_account,... < 0 DM,192,0.479,0.759,40
+credit_history,critical account/ other credits existing (not at this bank),205,0.176,-0.694,70
+credit_history,existing credits paid back duly till now,362,0.318,0.08,55
+credit_history,delay in paying off in the past,67,0.328,0.138,54
+credit_history,all credits at this bank paid back duly | no credits taken/ all credits paid back duly,66,0.561,1.082,36
+savings_account_and_bonds,... >= 1000 DM,37,0.135,-0.936,81
+savings_account_and_bonds,unknown/ no savings account,124,0.153,-0.848,79
+savings_account_and_bonds,500 <= ... < 1000 DM,41,0.171,-0.686,75
+savings_account_and_bonds,100 <= ... < 500 DM,81,0.321,0.101,54
+savings_account_and_bonds,... < 100 DM,417,0.367,0.296,49
+duration_in_month,"[-inf, 12)",129,0.147,-0.894,85
+duration_in_month,"[12, 15)",135,0.259,-0.2,63
+duration_in_month,"[15, 24)",145,0.317,0.08,54
+duration_in_month,"[24, 30)",141,0.326,0.121,53
+duration_in_month,"[30, inf)",150,0.427,0.547,40
+present_employment_since,4 <= ... < 7 years,113,0.204,-0.508,69
+present_employment_since,... >= 7 years,184,0.261,-0.194,62
+present_employment_since,1 <= ... < 4 years,246,0.285,-0.077,59
+present_employment_since,... < 1 year,120,0.433,0.575,43
+present_employment_since,unemployed,37,0.459,0.682,41
+purpose,car (used) | retraining,81,0.198,-0.539,72
+purpose,radio/television,186,0.226,-0.385,68
+purpose,furniture/equipment | domestic appliances,136,0.324,0.107,54
+purpose,car (new) | others,177,0.339,0.175,52
+purpose,business | repairs,85,0.353,0.241,50
+purpose,education,35,0.514,0.895,32
+other_installment_plans,none,563,0.265,-0.177,61
+other_installment_plans,stores,38,0.368,0.319,50
+other_installment_plans,bank,99,0.475,0.743,40
+housing,own,502,0.257,-0.216,62
+housing,rent,123,0.407,0.468,47
+housing,for free,75,0.413,0.498,46
+installment_rate_in_percentage_of_disposable_income,1,99,0.242,-0.284,69
+installment_rate_in_percentage_of_disposable_income,2,167,0.257,-0.21,66
+installment_rate_in_percentage_of_disposable_income,3,112,0.321,0.102,53
+installment_rate_in_percentage_of_disposable_income,4,322,0.332,0.146,51
